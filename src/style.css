@@ -1,0 +1,455 @@
+/* Add any CSS you need to this file. */
+@import './reset.css';
+body {
+  background-color: #ebecf1;
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  width: 100%;
+}
+header #title {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: gray 3px solid;
+  background-color: #ffffff;
+}
+#flag img {
+  margin-left: 10px;
+  margin-top: 18px;
+  width: 50px;
+}
+header #title #header {
+  font-size: 3em;
+  margin-top: 20px;
+  font-weight: 900;
+  font-family: 'Ranchers', cursive;
+  width: 50%;
+  text-align: end;
+}
+header #title a:link {
+  text-decoration: none;
+  color: black;
+}
+header #title a:visited {
+  color: black;
+}
+header #title a:hover {
+  text-decoration: none;
+  opacity: 1;
+  cursor: pointer;
+}
+#search {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+  height: 30px;
+  border: none;
+}
+#title input {
+  margin-left: 250px;
+  border: none;
+  border-bottom: black 1px solid;
+}
+#finder {
+  border-bottom: black 1px solid;
+  padding-top: 5px;
+}
+#home {
+  margin-top: 35px;
+  margin-left: 30px;
+  font-size: 20px;
+  font-family: 'Ranchers', cursive;
+}
+#contact {
+  padding-left: 20px;
+  padding-top: 38px;
+  font-size: 15px;
+  font-family: 'Ranchers', cursive;
+}
+#banner ul li {
+  font-family: 'Ranchers', cursive;
+  font-size: 20px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+#banner a,
+#contact a,
+#home a {
+  transition: 0.5s;
+}
+#banner {
+  background-color: #ffffff;
+}
+#banner ul {
+  list-style: none;
+  display: flex;
+  width: 50vw;
+  justify-content: space-around;
+}
+a:link {
+  text-decoration: none;
+  color: rgb(84, 79, 79);
+}
+a:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+#backgroundPhoto {
+  width: 100%;
+  margin-top: 120px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 400px;
+  transition: 1.3s;
+  opacity: 0.9;
+}
+#backgroundPhoto p {
+  padding-left: 50px;
+  padding-top: 300px;
+  font-size: 50px;
+  font-weight: 800;
+  color: #f4f6ff;
+}
+
+article {
+  width: 100%;
+}
+article #saleComment {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  font-size: 2.2em;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+#name1,
+#name2,
+#name3 {
+  font-family: 'Ranchers', cursive;
+  font-size: 30px;
+  padding-bottom: 60px;
+  color: orange;
+}
+.item img {
+  width: 200px;
+  height: 350px;
+}
+article p {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.price {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+article #sale {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#img1,
+#img2,
+#img3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+
+footer {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+footer .companyName {
+  width: 90%;
+  padding-top: 15px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .companyName h1 {
+  font-family: 'Ranchers', cursive;
+  font-size: 2rem;
+  color: black;
+}
+footer .companyName #companyLogo img {
+  padding-left: 10px;
+  width: 30px;
+}
+footer .companyName #companyLogo {
+  display: flex;
+}
+footer .companyName #sns {
+  margin-right: 20px;
+}
+
+footer .companyName i {
+  font-size: 30px;
+  padding-left: 80px;
+  color: black;
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer #copyright {
+  margin-left: 50px;
+  margin-top: 15px;
+  font-size: 10px;
+  font-weight: 700;
+}
+footer #subscribe input {
+  height: 15px;
+  font-size: 10px;
+  width: 150px;
+  border: none;
+  border-bottom: black solid 1px;
+  margin-top: 10px;
+}
+footer #subscribe button {
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  header #title #header {
+    width: 225px;
+    font-size: 2.5em;
+  }
+  #search {
+    margin-left: 150px;
+  }
+  #contact {
+    margin-left: 20px;
+    padding-top: 36px;
+    font-size: 20px;
+  }
+  #flag img {
+    width: 40px;
+  }
+  footer #subscribe input {
+    height: 15px;
+    font-size: 10px;
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  #search {
+    margin-left: 0;
+    padding-top: 20px;
+    height: 25px;
+  }
+  .item img {
+    width: 100px;
+    height: 170px;
+  }
+  #title input {
+    margin-left: 150px;
+    width: 50px;
+    font-size: 10px;
+  }
+  #home {
+    margin-top: 25px;
+    margin-left: 40px;
+    font-size: 16px;
+  }
+  #contact {
+    margin-left: 20px;
+    padding-top: 25px;
+    font-size: 16px;
+  }
+  footer .companyName {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  footer .companyName h1 {
+    font-size: 1.5rem;
+  }
+  footer .companyName #companyLogo img {
+    padding-left: 10px;
+    width: 25px;
+  }
+  footer .companyName #sns {
+    margin-right: 15px;
+  }
+
+  footer .companyName i {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+
+  footer #copyright {
+    margin-left: 20px;
+  }
+  footer #subscribe input {
+    height: 15px;
+    font-size: 10px;
+    width: 110px;
+    margin-top: 0px;
+  }
+  footer #subscribe button {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #title input {
+    margin-left: 85px;
+  }
+  #home {
+    margin-top: 25px;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  #contact {
+    margin-left: 10px;
+    padding-top: 25px;
+    font-size: 16px;
+  }
+  footer #subscribe input {
+    height: 15px;
+    font-size: 10px;
+    width: 80px;
+    margin-top: 0px;
+  }
+  footer #subscribe button {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  header #title {
+    padding-bottom: 5px;
+  }
+  header #title #header {
+    font-size: 1.5em;
+    text-align: start;
+    margin-left: 10px;
+    width: 95px;
+    margin-top: 5px;
+  }
+  #flag img {
+    width: 25px;
+    margin-top: 5px;
+  }
+  #search {
+    margin-left: 0;
+    padding-top: 5px;
+    height: 25px;
+  }
+  #searchlogo {
+    height: 10px;
+  }
+  #title input {
+    margin-left: 50px;
+    width: 50px;
+    font-size: 10px;
+  }
+
+  #finder {
+    font-size: 10px;
+    padding-top: 8px;
+  }
+  #home {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 8px;
+  }
+  #contact {
+    margin-left: 0px;
+    padding-top: 15px;
+    font-size: 8px;
+  }
+  #banner ul li {
+    font-size: 10px;
+    margin-left: 0px;
+  }
+  #backgroundPhoto {
+    margin-top: 60px;
+    height: 270px;
+    background-size: 100vw 270px;
+  }
+  #backgroundPhoto p {
+    padding-left: 30px;
+    padding-top: 220px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #f4f6ff;
+  }
+  article #saleComment {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  #name1,
+  #name2,
+  #name3 {
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+  .item img {
+    width: 68px;
+    height: 90px;
+  }
+  article p {
+    font-size: 7px;
+  }
+  .price {
+    font-size: 10px;
+  }
+  #img1,
+  #img2,
+  #img3 {
+    padding-bottom: 20px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+  footer .companyName {
+    padding-top: 5px;
+    padding-left: 5px;
+    justify-content: space-between;
+  }
+  footer .companyName h1 {
+    font-size: 1rem;
+  }
+  footer .companyName #companyLogo img {
+    padding-left: 5px;
+    width: 15px;
+  }
+  footer .companyName #sns {
+    margin-right: 10px;
+    margin-left: 30px;
+  }
+  footer .companyName i {
+    font-size: 9px;
+    padding-left: 10px;
+  }
+  footer #copyright {
+    margin-left: 5px;
+    margin-top: 15px;
+    font-size: 8px;
+    font-weight: 700;
+  }
+  footer .companyName #Email p {
+    font-size: 10px;
+  }
+  footer #subscribe button {
+    font-size: 7px;
+  }
+  footer #subscribe input {
+    height: 15px;
+    font-size: 10px;
+    width: 60px;
+  }
+}

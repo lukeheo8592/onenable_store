@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="./contactStyle.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Open+Sans:ital,wght@0,700;1,600&family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Open+Sans:ital,wght@0,700;1,600&family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./contactScript.js"></script>
+    <script src="https://kit.fontawesome.com/c3b620c29f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="title">
+        <a href="./index.html" id="header">OneNaBle</a>
+        <a href="./index.html" id="flag"><img src="./image/flag.jpg" alt="flag"/></a>
+        <div id="search">
+          <input type="text" name="search" placeholder="Search" /><i
+            id="finder"
+            class="fas fa-search"
+          ></i>
+        </div>
+        <div id="home"><a href="./index.html">Home</a></div>
+        <div id="contact"><a href="./contact.html" target="_blank">Contact Us</a></div>
+      </nav>
+    </header>
+    <div id="backgroundPhoto" title="background photo"></div>
+    <article>
+      <h2>contact us</h2>
+
+      <form action=" http://localhost:3000/data" method="get" name="sendEmail" id="sendEmail">
+        <div class="information">
+          <label class="name" for="userName">User name</label>
+          <input
+            id="userName"
+            type="text"
+            name="userName"
+            placeholder="Name"
+            size="25"
+            maxlength="50"
+            class="data"
+            required
+          />
+        </div>
+        <div class="information">
+          <label class="name" for="userEmail">Email address</label>
+          <input
+            id="userEmail"
+            type="email"
+            name="user_email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+            size="25"
+            placeholder="Email"
+            class="data"
+            required
+          />
+        </div>
+        <div class="information">
+          <label class="name" for="userAddress">Address</label>
+          <input
+            id="userAddress"
+            type="text"
+            name="userAddress"
+            size="25"
+            placeholder="Address"
+            class="data"
+            required
+          />
+        </div>
+        <div class="information">
+          <label class="name" for="userCity">City</label>
+          <input
+            type="text"
+            list="userCity"
+            placeholder="City"
+            name="userCity"
+            class="data"
+            required
+          />
+          <datalist id="userCity">
+            <option value="Toronto"> </option>
+            <option value="montreal"> </option>
+            <option value="Calgary"> </option>
+            <option value="Ottawa"> </option>
+          </datalist>
+        </div>
+        <div class="information">
+          <label class="name" for="userPostalCode">Postal Code</label>
+          <input
+            type="text"
+            placeholder="PostalCode"
+            id="userPostalCode"
+            name="userPostalCode"
+            class="data"
+            required
+          />
+        </div>
+        <div id="postalError">Invalid</div>
+        <div class="list">
+          <input type="radio" id="Question" name="Order" value="Question" checked />
+          <label for="Question">Question</label><br />
+          <input type="radio" id="Comment" name="Order" value="Comment" />
+          <label for="Comment">Comment</label><br />
+          <input type="radio" id="Order" name="Order" value="Order" />
+          <label for="Order">Order Problem</label>
+        </div>
+        <div id="hiddenText">
+          <input
+            type="text"
+            id="OrderValue"
+            name="OrderValue"
+            placeholder="Type Order Number"
+            class="data"
+          />
+        </div>
+        <div class="message">
+          <textarea
+            rows="4"
+            cols="50"
+            name="comment"
+            form="sendEmail"
+            placeholder="Enter Text here"
+            required
+          ></textarea>
+        </div>
+        <div class="information">
+          <input type="hidden" id="Myname" name="Myname" value="Geunhyeok Heo" />
+        </div>
+        <div class="information">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </article>
+
+    <footer>
+      <div class="companyName">
+        <nav>
+          <div id="companyLogo">
+            <h1>OneNaBle</h1>
+            <div id="footerFlag"><img src="./image/flag.jpg" alt="flag" /></div>
+          </div>
+
+          <div id="sns">
+            <a href="https://www.facebook.com/luffydukhu/?ref=page_internal" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://twitter.com/onepiece_birth" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/merry.ld/?hl=ko" target="_blank">
+              <i class="fab fa-instagram-square"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCWdrj1tZIr9WYpQedCi2yYg?view_as=subscriber&fbclid=IwAR3o9aAjRx7XH0TsuT7wFwREtTpwiSrGY3l2tGWR4LFyHvbfYRd5Vg-OY8w"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </nav>
+        <nav>
+          <div id="subscribe">
+            <form action="https://formspree.io/mqkynjqv" method="post" name="sendEmail">
+              <input
+                id="user_email"
+                type="email"
+                name="user_email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+                size="5"
+                placeholder="Email"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <nav>
+        <div id="copyright">&copy; 2020 OneNaBle &nbsp; Geunhyeok Heo</div>
+      </nav>
+    </footer>
+  </body>
+</html>
